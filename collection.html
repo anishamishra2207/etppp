@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collections - Ethnic Wear</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎨 Ethnic Wear Collections</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html" class="active">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Our Collections</h1>
+        <p>Explore our exclusive range of ethnic wear</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="collections">
+        <div class="container">
+            <div class="filter-section">
+                <h2>Filter by Category</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterCollection('all')">All</button>
+                    <button class="filter-btn" onclick="filterCollection('saree')">Sarees</button>
+                    <button class="filter-btn" onclick="filterCollection('lehenga')">Lehengas</button>
+                    <button class="filter-btn" onclick="filterCollection('kurti')">Kurtis</button>
+                    <button class="filter-btn" onclick="filterCollection('ethnic')">Ethnic Wear</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid">
+                <!-- Sarees -->
+                <div class="product-card" data-category="saree">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8B0000, #DC143C);"></div>
+                    <h3>Maroon Silk Saree</h3>
+                    <p class="price">₹8,999</p>
+                    <p class="description">Traditional silk saree with golden borders</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="saree">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFD700, #FFA500);"></div>
+                    <h3>Gold Zari Saree</h3>
+                    <p class="price">₹12,999</p>
+                    <p class="description">Elegant saree with intricate zari work</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <!-- Lehengas -->
+                <div class="product-card" data-category="lehenga">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FF69B4, #FFB6C1);"></div>
+                    <h3>Pink Embroidered Lehenga</h3>
+                    <p class="price">₹15,999</p>
+                    <p class="description">Vibrant lehenga with stone work</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="lehenga">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4B0082, #8A2BE2);"></div>
+                    <h3>Purple Silk Lehenga</h3>
+                    <p class="price">₹18,999</p>
+                    <p class="description">Luxurious silk lehenga with mirror work</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <!-- Kurtis -->
+                <div class="product-card" data-category="kurti">
+                    <div class="product-image" style="background: linear-gradient(135deg, #006400, #32CD32);"></div>
+                    <h3>Green Cotton Kurti</h3>
+                    <p class="price">₹2,999</p>
+                    <p class="description">Comfortable cotton kurti with embroidery</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="kurti">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FF6347, #FF4500);"></div>
+                    <h3>Red Printed Kurti</h3>
+                    <p class="price">₹3,499</p>
+                    <p class="description">Stylish kurti with traditional prints</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <!-- Ethnic Wear -->
+                <div class="product-card" data-category="ethnic">
+                    <div class="product-image" style="background: linear-gradient(135deg, #1E90FF, #87CEEB);"></div>
+                    <h3>Blue Anarkali Suit</h3>
+                    <p class="price">₹9,999</p>
+                    <p class="description">Traditional anarkali suit for festivals</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="ethnic">
+                    <div class="product-image" style="background: linear-gradient(135deg, #D2691E, #CD853F);"></div>
+                    <h3>Brown Salwar Kameez</h3>
+                    <p class="price">₹6,999</p>
+                    <p class="description">Elegant salwar suit for daily wear</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <!-- Additional Products -->
+                <div class="product-card" data-category="saree">
+                    <div class="product-image" style="background: linear-gradient(135deg, #00CED1, #20B2AA);"></div>
+                    <h3>Turquoise Chiffon Saree</h3>
+                    <p class="price">₹7,999</p>
+                    <p class="description">Light and breathable chiffon saree</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="lehenga">
+                    <div class="product-image" style="background: linear-gradient(135deg, #DC143C, #FF1493);"></div>
+                    <h3>Red Bridal Lehenga</h3>
+                    <p class="price">₹25,999</p>
+                    <p class="description">Premium bridal lehenga with heavy embroidery</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="kurti">
+                    <div class="product-image" style="background: linear-gradient(135deg, #DEB887, #DAA520);"></div>
+                    <h3>Beige Linen Kurti</h3>
+                    <p class="price">₹4,499</p>
+                    <p class="description">Comfortable linen kurti for summer</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="collection.html">All Collections</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ethnic Wear Collections. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
